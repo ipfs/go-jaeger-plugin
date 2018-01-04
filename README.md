@@ -46,6 +46,3 @@ As stated above, the plugin library only works in Linux. Bug the go team to
 support your system!
 
 * Or use a linux virtualbox, and mount this directory.
-
-* Or, if you are in OSX, [use this handy script](hacks/osx.sh)
-
