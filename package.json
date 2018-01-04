@@ -1,0 +1,16 @@
+{
+  "author": "frist",
+  "bugs": {
+    "url": "github.com/frrist/go-jaeger-plugin"
+  },
+  "gx": {
+    "dvcsimport": "github.com/frrist/go-jaeger-plugin"
+  },
+  "gxVersion": "0.12.1",
+  "language": "go",
+  "license": "",
+  "name": "go-jaeger-plugin",
+  "releaseCmd": "git commit -a -m \"gx publish $VERSION\"",
+  "version": "0.0.0"
+}
+
