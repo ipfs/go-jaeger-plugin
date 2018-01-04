@@ -22,8 +22,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/opentracing/opentracing-go"
-	"github.com/opentracing/opentracing-go/ext"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go/ext"
 
 	"github.com/uber/jaeger-client-go/internal/baggage"
 	"github.com/uber/jaeger-client-go/log"

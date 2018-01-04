@@ -15,8 +15,8 @@
 package config
 
 import (
-	opentracing "github.com/opentracing/opentracing-go"
 	"github.com/uber/jaeger-lib/metrics"
+	opentracing "gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
 
 	"github.com/uber/jaeger-client-go"
 )

@@ -21,7 +21,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/opentracing/opentracing-go"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
 
 	"github.com/uber/jaeger-client-go"
 	"github.com/uber/jaeger-client-go/internal/baggage/remote"

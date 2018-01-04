@@ -15,7 +15,7 @@
 package jaeger
 
 import (
-	"github.com/opentracing/opentracing-go/log"
+	"gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go/log"
 
 	"github.com/uber/jaeger-client-go/internal/baggage"
 )

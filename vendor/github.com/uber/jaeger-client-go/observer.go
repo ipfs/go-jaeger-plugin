@@ -14,7 +14,7 @@
 
 package jaeger
 
-import opentracing "github.com/opentracing/opentracing-go"
+import opentracing "gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
 
 // Observer can be registered with the Tracer to receive notifications about
 // new Spans.

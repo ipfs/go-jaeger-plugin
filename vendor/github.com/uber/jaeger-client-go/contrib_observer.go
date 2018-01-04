@@ -15,11 +15,11 @@
 package jaeger
 
 import (
-	opentracing "github.com/opentracing/opentracing-go"
+	opentracing "gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
 )
 
 // ContribObserver can be registered with the Tracer to receive notifications
-// about new Spans. Modelled after github.com/opentracing-contrib/go-observer.
+// about new Spans. Modelled after gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo-contrib/go-observer.
 type ContribObserver interface {
 	// Create and return a span observer. Called when a span starts.
 	// If the Observer is not interested in the given span, it must return (nil, false).
@@ -37,7 +37,7 @@ type ContribObserver interface {
 
 // ContribSpanObserver is created by the Observer and receives notifications
 // about other Span events. This interface is meant to match
-// github.com/opentracing-contrib/go-observer, via duck typing, without
+// gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo-contrib/go-observer, via duck typing, without
 // directly importing the go-observer package.
 type ContribSpanObserver interface {
 	OnSetOperationName(operationName string)

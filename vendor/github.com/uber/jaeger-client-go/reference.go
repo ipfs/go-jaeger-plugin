@@ -14,7 +14,7 @@
 
 package jaeger
 
-import "github.com/opentracing/opentracing-go"
+import "gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
 
 // Reference represents a causal reference to other Spans (via their SpanContext).
 type Reference struct {
