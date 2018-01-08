@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/frrist/go-jaeger-plugin",
+	"ImportPath": "github.com/ipfs/go-jaeger-plugin",
 	"GoVersion": "go1.9",
 	"GodepVersion": "v79",
 	"Deps": [

@@ -1,10 +1,10 @@
 {
-  "author": "frist",
+  "author": "frrist",
   "bugs": {
-    "url": "github.com/frrist/go-jaeger-plugin"
+    "url": "github.com/ipfs/go-jaeger-plugin"
   },
   "gx": {
-    "dvcsimport": "github.com/frrist/go-jaeger-plugin"
+    "dvcsimport": "github.com/ipfs/go-jaeger-plugin"
   },
   "gxDependencies": [
     {

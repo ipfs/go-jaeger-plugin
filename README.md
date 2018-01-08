@@ -8,11 +8,11 @@ in Go only works in Linux.
 
 go get the code without building
 ```
-$ go get -d github.com/frrist/go-jaeger-plugin
+$ go get -d github.com/ipfs/go-jaeger-plugin
 ```
 install deps
 ```
-$ cd $GOPATH/src/github.com/frrist/go-jaeger-plugin/
+$ cd $GOPATH/src/github.com/ipfs/go-jaeger-plugin/
 ```
 ```
 $ gx install
