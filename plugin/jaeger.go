@@ -28,7 +28,7 @@ func (*jaegerPlugin) Init() error {
 }
 
 //Initalize a Jaeger tracer and set it as the global tracer in opentracing api
-func (*jaegerPlugin) InitGlobalTracer() (opentracing.Tracer, error) {
+func (*jaegerPlugin) InitTracer() (opentracing.Tracer, error) {
 	tracerCfg := &config.Configuration{
 		Sampler: &config.SamplerConfig{
 			Type:  "const",
