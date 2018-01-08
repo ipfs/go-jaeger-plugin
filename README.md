@@ -19,10 +19,14 @@ $ gx install
 ```
 build the plugin
 ```
+$ cd plugin
+```
+```
 $ make
 ```
 ## Installing
 Move `jaeger-plugin.so` to `$IPFS_PATH/plugins/jaeger-plugin.so` and set it to be executable:
+
 Make plugin executable
 ```
 $ chmod +x jaeger-plugin.so
