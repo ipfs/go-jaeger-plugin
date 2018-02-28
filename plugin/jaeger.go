@@ -1,6 +1,8 @@
 package main
 
 import (
+	"os"
+
 	plugin "github.com/ipfs/go-ipfs/plugin"
 	config "github.com/uber/jaeger-client-go/config"
 	opentracing "gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
@@ -15,6 +17,9 @@ type jaegerPlugin struct{}
 
 var _ plugin.PluginTracer = (*jaegerPlugin)(nil)
 
+var tracerName = "#TRACER-NAME-NOT-SET"
+var tracerEnv = "IPFS_TRACER_NAME"
+
 func (*jaegerPlugin) Name() string {
 	return "jaeger"
 }
@@ -24,6 +29,10 @@ func (*jaegerPlugin) Version() string {
 }
 
 func (*jaegerPlugin) Init() error {
+	maybeName := os.Getenv(tracerEnv)
+	if maybeName != "" {
+		tracerName = maybeName
+	}
 	return nil
 }
 
@@ -39,7 +48,7 @@ func (*jaegerPlugin) InitTracer() (opentracing.Tracer, error) {
 		},
 	}
 	//we are ignoring the closer for now
-	tracer, _, err := tracerCfg.New("IPFS-NODE-ID")
+	tracer, _, err := tracerCfg.New(tracerName)
 	if err != nil {
 		return nil, err
 	}
