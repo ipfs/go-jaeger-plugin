@@ -5,7 +5,7 @@ import (
 
 	plugin "github.com/ipfs/go-ipfs/plugin"
 	config "github.com/uber/jaeger-client-go/config"
-	opentracing "gx/ipfs/QmWLWmRVSiagqP15jczsGME1qpob6HDbtbHAY2he9W5iUo/opentracing-go"
+    opentracing "github.com/opentracing/opentracing-go"
 )
 
 // Plugins is exported list of plugins that will be loaded
