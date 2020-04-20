@@ -1,4 +1,4 @@
-package jaeger
+package main
 
 import (
 	"os"
@@ -28,7 +28,7 @@ func (*jaegerPlugin) Version() string {
 	return "0.0.1"
 }
 
-func (*jaegerPlugin) Init() error {
+func (*jaegerPlugin) Init(env *plugin.Environment) error {
 	maybeName := os.Getenv(tracerEnv)
 	if maybeName != "" {
 		tracerName = maybeName
